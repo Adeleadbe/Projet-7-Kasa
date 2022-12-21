@@ -1,4 +1,4 @@
-import "./styles/App.scss";
+import "./styles/index.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
