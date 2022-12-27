@@ -11,7 +11,7 @@ export default function Banner() {
         <img src={logo} alt="Kasa" className="banner__logo" />
         <nav>
           <Link to="/">Accueil</Link>
-          <Link to="/About">À propos</Link>
+          <Link to="/About">À propos test</Link>
         </nav>
       </div>
       <div className="banner__slogan">
