@@ -5,8 +5,8 @@ import bgFilter from "../assets/bgFilter.png"
 export default function Banner() {
   return (
     <div className="banner">
-        <img src={imageBg} alt="Paysage" className="banner_image" />
-        <img src={bgFilter} alt="Filtre" className="banner_image" />
+        <img className="banner_image" src={imageBg} alt="Paysage" />
+        <img className="banner_filter" src={bgFilter} alt="Filtre"  />
         <h1>Chez vous, partout et ailleurs</h1>
     </div>
   );

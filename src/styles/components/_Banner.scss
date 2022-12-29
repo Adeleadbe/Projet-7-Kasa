@@ -1,14 +1,32 @@
 .banner {
     margin-top: 69px;
-    height: 280px;
+    height: 223px;
     width: 100%;
-    &_image {
+    overflow:hidden;
+    position: relative;
+    &_filter {
         border-radius: 25px;
         position: absolute;
         max-width: 1240px;
-        width: 90%;
+        width: 100%;
+        height: 223px;
+        z-index: -1;
     }
     & h1 {
-        
+        font-size: 48px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        height: 223px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    &_image {
+        border-radius: 25px;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit:cover;
     }
 }
