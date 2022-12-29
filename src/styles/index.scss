@@ -1,17 +1,14 @@
+@import './utils/Mixins';
 //Styles pages
 
+@import './pages/Settings';
 @import './pages/About';
 @import './pages/Home';
 @import './pages/Logement';
 @import './pages/PageError';
 
-//Style Base
-@import './base/Box';
-@import './base/Police';
-
 //Style Components
+@import './components/NavBar';
 @import './components/Banner';
 
 //Style Layout
-
-//Faire un reset css (boxsizing: border box etc)
