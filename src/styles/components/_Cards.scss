@@ -1,0 +1,19 @@
+.card_container {
+    border: 1px solid rgb(203, 18, 18);
+    border-radius: 10px;
+    display: flex;
+    & .card {
+        width: 340px;
+        height: 340px;
+        border: 1px solid rgb(203, 18, 18);
+        &_image  {
+            width: 340px;
+            height: 340px;
+            border: 1px solid rgb(203, 18, 18);
+            z-index: -1;
+        }
+        & h2 {
+            z-index: 1;
+        }
+    }
+}
