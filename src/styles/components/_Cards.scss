@@ -1,19 +1,60 @@
 .card_container {
-    border: 1px solid rgb(203, 18, 18);
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: #F6F6F6;
+    padding: 56px 30px 0 50px;
+    border-radius: 25px;
     & .card {
         width: 340px;
         height: 340px;
-        border: 1px solid rgb(203, 18, 18);
+        margin-bottom: 50px;
+        position: relative;
+        margin-right: 20px;
         &_image  {
-            width: 340px;
+            border-radius: 10px;
+            width: 100%;
             height: 340px;
-            border: 1px solid rgb(203, 18, 18);
-            z-index: -1;
+            object-fit: cover;
+        }
+        &_mask {
+            width: 100%;
+            height: 340px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
         }
         & h2 {
-            z-index: 1;
+            position: absolute;
+            bottom: 1px;
+            width: 300px;
+            margin: 20px;
+            font-size: 18px;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+    }
+}
+
+@include phone {
+    .card_container {
+        padding: 0;
+        & .card {
+            width: 110%;
+            height: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+            &_image {
+                width: 100%;
+                height: 100%;
+            }
+            &_mask {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
