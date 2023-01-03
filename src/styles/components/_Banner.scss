@@ -37,6 +37,9 @@
         & h1 {
             font-size: 40px;
         }
+        &_image {
+            object-fit: cover;
+        }
     }
 }
 
@@ -44,7 +47,7 @@
     .banner {
         height: 111px;
         margin-bottom: 20px;
-        border-radius: 10px;
+        border-radius: 20px;
         &_filter {
             border-radius: 10px;
         }
