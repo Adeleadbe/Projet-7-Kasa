@@ -6,12 +6,10 @@ import imageBg from "../assets/imageBg.png";
 
 export default function Home() {
   return (
-    <div className="body">
       <div className="home">
         <NavBar />
-        <Banner image= {imageBg} title={"Chez vous, partout et ailleurs"} />
+        <Banner image={imageBg} title={"Chez vous, partout et ailleurs"} />
         <Cards />
       </div>
-    </div>
   );
 }

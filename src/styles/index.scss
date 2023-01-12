@@ -5,11 +5,12 @@
 @import './pages/About';
 @import './pages/Home';
 @import './pages/Logement';
-@import './pages/PageError';
 
 //Style Components
+@import './components/Error404';
 @import './components/NavBar';
 @import './components/Banner';
 @import './components/Cards';
 @import './components/Collapse';
+@import './components/Slideshow'; 
 //Style Layout

@@ -31,35 +31,3 @@
     }
 }
 
-@include tablet {
-    .banner {
-        margin-bottom: 20px;
-        & h1 {
-            font-size: 40px;
-        }
-        &_image {
-            object-fit: cover;
-        }
-    }
-}
-
-@include phone {
-    .banner {
-        height: 111px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-        &_filter {
-            border-radius: 10px;
-        }
-        &_image {
-            border-radius: 10px;
-        }
-        & h1 {
-            width: 220px;
-            font-size: 24px;
-            text-align: initial;
-            margin-left: 16px;
-            margin-top: 27px;
-        }
-    }
-}
