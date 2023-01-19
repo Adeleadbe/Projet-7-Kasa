@@ -1,5 +1,5 @@
 .error {
-    color: #FF6060;
+    color: $color-secondary;
     text-align: center;
     h1 {
         font-size: 220px;
@@ -11,6 +11,6 @@
         font-weight: lighter;
     }
     & a {
-        color: #FF6060;
+        color: $color-secondary;
     }
 }

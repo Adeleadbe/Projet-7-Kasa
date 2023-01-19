@@ -9,9 +9,11 @@ export default function About() {
     <main className="about">
       <Banner image={imageAbout} />
       <div className="about">
-        {about.map((data, index) => {
+        {about.map((data) => {
           return (
-            <Collapse title={data.title} text={data.text} myKey={index}/>
+          <div className="collapse_container" key={data.id}>
+            <Collapse title={data.title} text={data.text}/>
+          </div>
           );
         })}
       </div>

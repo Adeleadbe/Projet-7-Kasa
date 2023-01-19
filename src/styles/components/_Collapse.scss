@@ -5,8 +5,8 @@
     position: relative;
     & h3 {
         border-radius: 5px;
-        background-color: #FF6060;
-        color: #FFFFFF;
+        background-color: $color-secondary;
+        color: $color-tertiary;
         height: 47px;
         padding-left: 18px;
         font-size: 20px;
@@ -18,8 +18,8 @@
         }
     }
     &_text {
-        background: #F7F7F7;
-        color: #FF6060;
+        background: $grey;
+        color: $color-secondary;
         padding: 30px 12px 45px 20px;
         font-size: 20px;
         border-radius: 0 0 5px 5px;
@@ -28,7 +28,7 @@
         }
     }
     &_icon {
-        color: #F7F7F7;
+        color: $grey;
         position: absolute;
         top: 14px;
         right: 23px;

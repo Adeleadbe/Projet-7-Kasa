@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    background-color: #f6f6f6;
+    background-color: $color-primary;
     padding: 56px 30px 0 50px;
     border-radius: 25px;
     & .card {
@@ -33,7 +33,7 @@
             width: 300px;
             margin: 20px;
             font-size: 18px;
-            color: #FFFFFF;
+            color: $color-tertiary;
             font-weight: 500;
         }
     }

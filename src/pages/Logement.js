@@ -5,6 +5,7 @@ import Logements from "../data/logements.json";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 import Ratings from "../components/Ratings";
+import { Navigate } from "react-router-dom";
 
 export default function Logement() {
   let logementId = useParams();
@@ -29,6 +30,10 @@ export default function Logement() {
       logementTags = logement.tags;
     }
   });
+
+  if(!logementTitle) {
+    return <Navigate to="*"/>
+  }
 
   return (
     <div className="logement">

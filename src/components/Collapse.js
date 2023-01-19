@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Collapse({ title, text, myKey }) {
+export default function Collapse({ title, text }) {
   const chevronUp = <i className="fa-solid fa-chevron-up"></i>;
   const chevronDown = <i className="fa-solid fa-chevron-down"></i>;
   //Here, we've defined the isActive state. Based on that, we'll hide or show the accordion content.

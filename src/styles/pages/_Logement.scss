@@ -4,7 +4,7 @@
     justify-content: space-between;
     }
     & h2, h3 {
-        color: #FF6060;
+        color: $color-secondary;
         font-weight: lighter;
         margin-bottom: 5px;
     }
@@ -25,7 +25,7 @@
             max-width: 85px;
             margin-top: 6px;
             font-size: 20px;
-            color: #FF6060;
+            color: $color-secondary;
             text-align: right;
         }
     }
