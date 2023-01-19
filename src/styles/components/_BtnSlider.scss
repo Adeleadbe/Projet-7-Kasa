@@ -1,0 +1,33 @@
+button{
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    &.btn.next {
+        position: absolute;
+        top: 190px;
+        right: 23px;
+    }
+    &.btn.prev {
+        position: absolute;
+        top: 190px;
+        left: 23px;
+    }
+    :hover {
+        cursor: pointer;
+    }
+}
+
+
+@include mobile {
+    button {
+        img {
+            width: 12px;
+        }
+        &.btn.next {
+            top: 145px;
+        }
+        &.btn.prev {
+            top: 145px;
+        }
+    }
+}

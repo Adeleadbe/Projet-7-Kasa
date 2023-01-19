@@ -1,0 +1,30 @@
+.display_tags {
+    margin-top: 20px;
+    .tag span{
+        margin-right: 10px;
+        padding: 5px 32px;
+        border-radius: 10px;
+        background-color: #FF6060;
+        color: #FFFFFF;
+    }
+}
+
+@include tablet {
+    .display_tags {
+        .tag span {
+            font-size: 13px;
+            padding: 4px 13px;
+        }
+    }
+}
+
+@include mobile {
+    .display_tags {
+        margin-top: 12px;
+        min-width: 400px;
+        .tag span {
+            font-size: 10px;
+            padding: 4px 13px;
+        }
+    }
+}

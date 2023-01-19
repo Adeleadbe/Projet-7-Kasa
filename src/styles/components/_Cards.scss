@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding: 56px 30px 0 50px;
     border-radius: 25px;
     & .card {
@@ -39,7 +39,7 @@
     }
 }
 
-@include phone {
+@include mobile {
     .card_container {
         padding: 0;
         & .card {

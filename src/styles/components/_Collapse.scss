@@ -3,15 +3,16 @@
     margin: auto;
     margin-bottom: 31px;
     position: relative;
-    & h2 {
+    & h3 {
         border-radius: 5px;
         background-color: #FF6060;
         color: #FFFFFF;
         height: 47px;
-        padding-top: 8px;
         padding-left: 18px;
-        font-size: 24px;
+        font-size: 20px;
+        padding-top: 12px;
         font-weight: lighter;
+        margin-bottom: 0;
         &:hover {
             cursor: pointer;
         }
@@ -19,9 +20,12 @@
     &_text {
         background: #F7F7F7;
         color: #FF6060;
-        padding: 20px 5px 15px 18px;
-        font-size: 18px;
-        border-radius: 5px;
+        padding: 30px 12px 45px 20px;
+        font-size: 20px;
+        border-radius: 0 0 5px 5px;
+        & ul {
+            list-style-type: none;  
+        }
     }
     &_icon {
         color: #F7F7F7;
@@ -31,7 +35,7 @@
     }
 }
 
-.about_navbar {
+.about {
     & .banner_image {
         object-fit: cover;
         object-position: 30% 40%;
@@ -39,7 +43,7 @@
 }
 
 @include tablet {
-    .about_navbar {
+    .about {
         & .banner_image {
             object-position: 100% 50%;
             border-radius: 15px;
@@ -47,7 +51,7 @@
     }
 }
 
-@include phone {
+@include mobile {
     .banner {
         margin-bottom: 20px;
     }
@@ -55,9 +59,9 @@
         margin-bottom: 20px;
         &_text {
             font-size: 12px;
-            height: 110px;
+            padding: 14px 10px 10px 12px;
         }
-        & h2 {
+        & h3 {
             font-size: 14px;   
             padding-top: 7px;
             height: 30px;

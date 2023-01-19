@@ -1,0 +1,25 @@
+.display_host_rating {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 18px;
+    margin-top: 15px;
+    & img {
+        width: 30px;
+    }
+}
+
+@include tablet {
+    .display_host_rating {
+        & img {
+            width: 25px;
+        }
+    }
+}
+
+@include mobile {
+    .display_host_rating img {
+        width: 17px;
+    }
+}
