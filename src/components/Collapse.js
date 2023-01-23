@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Collapse({ title, text }) {
   const chevronUp = <i className="fa-solid fa-chevron-up"></i>;
   const chevronDown = <i className="fa-solid fa-chevron-down"></i>;
-  //Here, we've defined the isActive state. Based on that, we'll hide or show the accordion content.
+  //Defini le active state
   const [active, setActive] = useState(false);
 
   // Creation d'une liste pour afficher les elements dans equipement
@@ -23,12 +23,11 @@ export default function Collapse({ title, text }) {
   };
 
   return (
-    //Here, we're inverting the isActive state value when we click on the accordion-title div. If the value of isActive is false, we're setting it to true and vice-versa.
+    // Inverse la valeur de active state quand click sur le titre.
     <div className="collapse">
       <h3 onClick={() => setActive(!active)}>{title}</h3>
       <div className="collapse_icon">{active ? chevronUp : chevronDown}</div>
       {active && <div className="collapse_text">{displayText()}</div>}
     </div>
-    //And if the isActive state value is true then we're only showing the accordion content as shown au dessus
   );
 }
