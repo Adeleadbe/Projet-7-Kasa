@@ -30,7 +30,7 @@ export default function Slideshow({ images }) {
           </div>
         );
       })}
-      {/*Ajoute les fleches si il y a plus d'une image*/}
+      {/*Ajoute les fleches et le nombre si il y a plus d'une image*/}
       {images.length > 1 ? (
         <>
         <div className="slide_counter">{slideIndex}/{images.length}</div>

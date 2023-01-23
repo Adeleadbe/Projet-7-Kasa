@@ -1,6 +1,7 @@
 .error {
     color: $color-secondary;
     text-align: center;
+    margin-bottom: 35px;
     h1 {
         font-size: 220px;
         margin-top: 100px;
@@ -12,5 +13,16 @@
     }
     & a {
         color: $color-secondary;
+    }
+}
+
+@include mobile {
+    .error {
+        & h1 {
+            font-size: 100px;
+        }
+        & h2 {
+            font-size: 20px;
+        }
     }
 }

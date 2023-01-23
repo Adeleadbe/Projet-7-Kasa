@@ -7,10 +7,10 @@ export default function Collapse({ title, text }) {
   //Defini le active state
   const [active, setActive] = useState(false);
 
-  // Creation d'une liste pour afficher les elements dans equipement
   const displayText = () => {
     if (typeof text === "object") {
       return (
+        //Creation d'une liste pour afficher les elements dans equipement
         <ul>
           {text.map((item, index) => (
             <li key={index}>{item}</li>
