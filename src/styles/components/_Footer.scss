@@ -1,5 +1,5 @@
-.footer {
-    height: 217px;
+footer {
+    height: 210px;
     background-color: #000000;
     width: 100%;
     text-align: center;
@@ -16,7 +16,7 @@
 }
 
 @include mobile {
-    .footer {
+    footer {
         & p {
             font-size: 14px;
         }

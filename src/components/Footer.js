@@ -3,9 +3,9 @@ import logoFooter from '../assets/logoFooter.png'
 
 export default function Footer() {
   return (
-    <div className='footer'>
+    <footer>
         <img src={logoFooter} alt="logo footer" />
         <p>© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   )
 }
