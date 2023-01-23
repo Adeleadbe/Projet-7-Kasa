@@ -1,12 +1,12 @@
 import React from "react";
 
-  const Tags = ({ tag }) => {
+  const Tag = ({ tags }) => {
     return (
       <div className="tag">
-        {tag.map((element, index) => {
+        {tags.map((element, index) => {
           return <span key={index}>{element}</span>;
         })}
       </div>
     );
   };
-  export default Tags;
+  export default Tag;

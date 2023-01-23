@@ -2,12 +2,12 @@ import React from "react";
 import starWithColor from "../assets/starWithColor.png";
 import starWithoutColor from "../assets/starWithoutColor.png";
 
-export default function Ratings({ rating }) {
+export default function Rating({ ratings }) {
   let stars = [];
   const star = (starWithColor);
   const emptyStar = (starWithoutColor);
   
-  const parseRating = parseInt(rating);
+  const parseRating = parseInt(ratings);
   const emptyStarNumber = 5 - parseRating;
 
   for (let i = 0; i < parseRating; i++) {

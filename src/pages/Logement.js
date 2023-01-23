@@ -2,9 +2,9 @@ import React from "react";
 import Slideshow from "../components/Slideshow";
 import { useParams } from "react-router-dom";
 import Logements from "../data/logements.json";
-import Tags from "../components/Tags";
+import Tag from "../components/Tag";
 import Collapse from "../components/Collapse";
-import Ratings from "../components/Ratings";
+import Rating from "../components/Rating";
 import { Navigate } from "react-router-dom";
 
 export default function Logement() {
@@ -31,8 +31,8 @@ export default function Logement() {
     }
   });
 
-  if(!logementTitle) {
-    return <Navigate to="*"/>
+  if (!logementTitle) {
+    return <Navigate to="*" />;
   }
 
   return (
@@ -44,7 +44,7 @@ export default function Logement() {
             <h2>{logementTitle}</h2>
             <h3>{logementLocation}</h3>
             <div className="display_tags">
-              <Tags tag={logementTags} />
+              <Tag tags={logementTags} />
             </div>
           </div>
           <div className="display_host">
@@ -53,7 +53,7 @@ export default function Logement() {
               <img src={logementHost.picture} alt={logementHost.name} />
             </div>
             <div className="display_host_rating">
-              <Ratings rating={logementRating} />
+              <Rating ratings={logementRating} />
             </div>
           </div>
         </div>
